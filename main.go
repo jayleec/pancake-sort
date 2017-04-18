@@ -38,6 +38,7 @@ func findMax(A []int, high int) int{
 	return index
 }
 
+//reverse before turner part
 func reverse(A []int, turner int){
 	for i, j := 0, turner; i<turner+1/2; i,j = i+1, j-1{
 		A[i], A[j] = A[j], A[i]
